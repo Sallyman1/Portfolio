@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Abdiqani Sharif Ahmed - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8; /* Very light gray background */
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a1a1a; /* Darkest gray for titles */
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 60px;
+            height: 4px;
+            background-color: #555; /* Medium gray accent */
+            border-radius: 2px;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md py-4">
+        <nav class="container flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800 rounded-md p-2 hover:text-gray-600 transition duration-300">Ahmed Sharif</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="text-gray-600 hover:text-gray-800 transition duration-300 font-medium">About</a></li>
+                <li><a href="#experience" class="text-gray-600 hover:text-gray-800 transition duration-300 font-medium">Experience</a></li>
+                <li><a href="#skills" class="text-gray-600 hover:text-gray-800 transition duration-300 font-medium">Skills</a></li>
+                <li><a href="#projects" class="text-gray-600 hover:text-gray-800 transition duration-300 font-medium">Projects</a></li>
+                <li><a href="#contact" class="text-gray-600 hover:text-gray-800 transition duration-300 font-medium">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="bg-gray-900 text-white py-20 md:py-32 text-center rounded-b-lg shadow-lg">
+        <div class="container">
+            <!-- Placeholder for a more unique profile image, perhaps a stylized silhouette or abstract tech icon -->
+            <img src="https://placehold.co/150x150/333333/ffffff?text=AA" alt="Profile Picture" class="rounded-full mx-auto mb-6 border-4 border-gray-700 shadow-lg">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">Hello, I'm <span class="text-gray-300">Ahmed Abdiqani Sharif Ahmed</span></h1>
+            <p class="text-xl md:text-2xl mb-8">An aspiring Software Engineer passionate about building innovative technology solutions.</p>
+            <a href="#projects" class="bg-white text-gray-800 hover:bg-gray-200 px-8 py-3 rounded-full text-lg font-semibold shadow-lg transition duration-300 transform hover:scale-105">View My Projects</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-16 md:py-24 bg-white shadow-md rounded-lg mt-8 mx-auto container card">
+        <div class="container">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="mt-10 text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
+                <p class="mb-4">
+                    Welcome to my portfolio! I am an aspiring Software Engineer based in Uxbridge, London, with a strong foundation in IT and a passion for creating robust and scalable technology solutions. My journey into tech is fueled by a curiosity for digital trends and a drive to solve complex programming challenges.
+                </p>
+                <p class="mb-4">
+                    My background includes valuable experience in customer-facing roles, where I honed skills in problem-solving, active listening, and delivering inclusive support. These experiences have taught me the importance of user-centric design and effective communication, which I believe are crucial in software development.
+                </p>
+                <p>
+                    I am eager to apply my growing technical skills and transferable abilities to an entry-level software engineering role, contributing to cutting-edge projects and making a tangible impact in the tech field.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 md:py-24 bg-gray-100 rounded-lg mt-8 mx-auto container card">
+        <div class="container">
+            <h2 class="section-title text-center">My Experience</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <!-- Experience Card 1: Retail Sales Assistant -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Retail Sales Assistant - Wilko</h3>
+                    <p class="text-gray-600 mb-3 text-sm">Sep. 2022 - Feb. 2023 | On-Site</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Greeted customers with energy and warmth, creating welcoming interactions and tailored support across the shop floor.</li>
+                        <li>Contributed to a clean and attractive store layout, helping merchandise products based on visibility and customer flow.</li>
+                        <li>Supported team KPIs through excellent service, resolving issues, and maintaining stock availability during busy periods.</li>
+                        <li>Built trust through consistent product knowledge and effective listening, encouraging return visits and reducing complaints by 20%.</li>
+                    </ul>
+                </div>
+                <!-- Experience Card 2: Customer Experience Volunteer -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Customer Experience Volunteer - Uxbridge, London</h3>
+                    <p class="text-gray-600 mb-3 text-sm">Aug. 2024 - Sep. 2024</p>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Managed high-volume customer interactions at the welcome desk, engaging over 300 guests with confident, friendly communication.</li>
+                        <li>Assisted with layout and presentation of merchandise tables to attract interest and improve visual flow of the venue.</li>
+                        <li>Supported a team-driven atmosphere, always ready to assist others and maintain a smooth customer experience.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Education Section within Experience or as a separate small section -->
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-4 text-center text-gray-800">Education</h3>
+                <div class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+                    <p class="text-lg font-medium text-gray-800">West London College</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2">
+                        <li>BTEC Level 3 Extended Diploma in IT (Anticipated Completion: August 2025)</li>
+                        <li>Completed 2023 GCSEs (5 A-C grades)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-white rounded-lg mt-8 mx-auto container card">
+        <div class="container">
+            <h2 class="section-title text-center">My Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Skill Card 1: Technical Skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Technical Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Programming (Python, JavaScript, C++)</li>
+                        <li>Web Technologies (HTML5, CSS3, Tailwind CSS, React)</li>
+                        <li>Databases (SQL, NoSQL concepts)</li>
+                        <li>Version Control (Git, GitHub)</li>
+                        <li>Digital Trends</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 2: Transferable Skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Transferable Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Problem-Solving</li>
+                        <li>Team Collaboration</li>
+                        <li>Active Listening</li>
+                        <li>Adaptability</li>
+                        <li>Organization</li>
+                        <li>Attention to Detail</li>
+                    </ul>
+                </div>
+                <!-- Skill Card 3: Customer & Operational Skills -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Customer & Operational Skills</h3>
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li>Customer Engagement</li>
+                        <li>Conflict Resolution</li>
+                        <li>Proactive Assistance</li>
+                        <li>Welcoming Experiences</li>
+                        <li>Inventory & Stock Management</li>
+                        <li>EPOS Systems</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 md:py-24 bg-gray-100 shadow-md rounded-lg mt-8 mx-auto container card">
+        <div class="container">
+            <h2 class="section-title text-center">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <!-- Project Card 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/cccccc/333333?text=Project+1" alt="Project 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Title One</h3>
+                        <p class="text-gray-600 mb-4">A brief description of Project One, highlighting its purpose and the technologies used. Focus on the problem solved or value created.</p>
+                        <a href="#" class="text-gray-700 hover:underline font-medium">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/bbbbbb/333333?text=Project+2" alt="Project 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Title Two</h3>
+                        <p class="text-gray-600 mb-4">A brief description of Project Two. Emphasize your role and the technical challenges overcome.</p>
+                        <a href="#" class="text-gray-700 hover:underline font-medium">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <img src="https://placehold.co/600x400/aaaaaa/333333?text=Project+3" alt="Project 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Project Title Three</h3>
+                        <p class="text-gray-600 mb-4">A brief description of Project Three, showcasing its impact or unique features.</p>
+                        <a href="#" class="text-gray-700 hover:underline font-medium">View Details &rarr;</a>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 bg-white rounded-lg mt-8 mx-auto container card">
+        <div class="container">
+            <h2 class="section-title text-center">Get In Touch</h2>
+            <div class="mt-10 max-w-xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                <p class="text-center text-lg text-gray-700 mb-6">
+                    Have a question or want to work together? Feel free to reach out!
+                </p>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="shadow appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="shadow appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="your.email@example.com">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="shadow appearance-none border border-gray-300 rounded-md w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-gray-500" placeholder="Your message..."></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-gray-800 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-full focus:outline-none focus:shadow-outline transition duration-300 transform hover:scale-105 shadow-lg">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-12 rounded-t-lg shadow-inner">
+        <div class="container text-center text-gray-400">
+            <p>&copy; 2025 Ahmed Abdiqani Sharif Ahmed. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://www.linkedin.com/in/ahmed-abdiqani-sharif-ahmed" target="_blank" class="hover:text-gray-300 transition duration-300">LinkedIn</a>
+                <a href="https://github.com/yourusername" target="_blank" class="hover:text-gray-300 transition duration-300">GitHub</a>
+                <a href="mailto:ahmedahmed6042762@gmail.com" class="hover:text-gray-300 transition duration-300">Email</a>
+                <a href="tel:+447481503937" class="hover:text-gray-300 transition duration-300">Phone</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
